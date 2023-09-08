@@ -10,17 +10,17 @@ Then add service provider to config/app.php:
 ```php
 'providers' => [
     ...
-    Canbagdiken\Paysera\PayseraServiceProvider::class,
+    canbagdiken\Paysera\PayseraServiceProvider::class,
 ],
 ```
 Facede to aliases:
 ```php
 'aliases' => [
     ...
-    'Paysera' => Canbagdiken\Paysera\Facades\Paysera::class,
+    'Paysera' => canbagdiken\Paysera\Facades\Paysera::class,
 ],
 ```
 And last is to publish config, migrations and view:
 ```sh
-$ php artisan vendor:publish --provider="Canbagdiken\Paysera\PayseraServiceProvider"
+$ php artisan vendor:publish --provider="canbagdiken\Paysera\PayseraServiceProvider"
 ```

@@ -1,6 +1,7 @@
 <?php
 
-namespace Dedo\Paysera;
+namespace Canbagdiken\Paysera;
+
 
 use Hashids\Hashids;
 use Illuminate\Http\Request;
@@ -82,14 +83,14 @@ class PayseraManager {
                 'country'       => config('paysera.country'),
                 'test'          => config('paysera.test'),
                 'version'       => '1.6',
-                'accepturl'     => route(config('paysera.accept_route')),
-                'cancelurl'     => route(config('paysera.cancel_route')),
-                'callbackurl'   => route(config('paysera.callback_route')),
 
                 'orderid'       => $order_id,
                 'amount'        => intval($amount*100)
-
             ];
+
+            if(!is_null(config('paysera.callback_uri'))){
+                $payment_data['callbackurl'] = route('artme.paysera.callback');
+            }
 
             $payment_data = array_merge($payment_data, $options);
 

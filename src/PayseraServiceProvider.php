@@ -1,6 +1,7 @@
 <?php
 
-namespace Dedo\Paysera;
+namespace Canbagdiken\Paysera;
+
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dedo\Paysera\Facades;
+namespace Canbagdiken\Paysera\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
