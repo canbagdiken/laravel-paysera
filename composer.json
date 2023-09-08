@@ -1,19 +1,19 @@
 {
-    "name": "dedo/laravel-paysera",
-    "description": "Paysera laravel",
+    "name": "canbagdiken/laravel-paysera",
+    "description": "Paysera module for Laravel 5.1 (fixing)",
     "authors": [
         {
-            "name": "Dedo Solutions",
-            "email": "dedo.solutions@gmail.com"
+            "name": "Can Bağdiken",
+            "email": "canbagdiken@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Dedo\\Paysera\\": "src"
+            "canbagdiken\\laravel-paysera\\": "src"
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "hashids/hashids": "^4.0"
+        "hashids/hashids": "^2.0"
     }
 }
